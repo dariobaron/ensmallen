@@ -107,7 +107,12 @@ class SPSA
   size_t MaxIterations() const { return maxIterations; }
   //! Modify the maximum number of iterations (0 indicates no limit).
   size_t& MaxIterations() { return maxIterations; }
-
+  
+  //! Get the tolerance for termination.
+  double Tolerance() const { return tolerance; }
+  //! Modify the tolerance for termination.
+  double& Tolerance() { return tolerance; }
+  
  private:
   //! Scaling exponent for the step size.
   double alpha;
