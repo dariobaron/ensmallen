@@ -132,6 +132,16 @@ class SA
   //! Modify the maxToleranceSweep.
   size_t& MaxToleranceSweep() { return maxToleranceSweep; }
 
+   //! Get the maximum move size.
+   double MaxMoveCoef() const { return maxMoveCoef; }
+   //! Modify the maximum move size.
+   double& MaxMoveCoef() { return maxMoveCoef; }
+
+   //! Get the initial move size.
+   double InitMoveCoef() const { return initMoveCoef; }
+   //! Modify the initial move size.
+   double& InitMoveCoef() { return initMoveCoef; }
+
   //! Get the gain.
   double Gain() const { return gain; }
   //! Modify the gain.
